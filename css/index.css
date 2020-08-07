@@ -7,15 +7,16 @@ ul{
 	padding: 0;
 	margin: 0;
 }
+a{
+	text-decoration: none;
+}
 ul>li{
 	padding: 0;
 	margin: 0;
 	
 }
-a{
-	text-decoration: none;
+ div.top-nav a,div.top-right-title{	
 	 color: #999;
-	
 	 }
 .clearfloat:after{
 	clear: both;
@@ -46,9 +47,7 @@ a{
 
    }
 .left-float li{
-	float: left;
-
-	
+	float: left;	
 }
 /*倒三角*/
 img.down-arrow{
@@ -68,7 +67,7 @@ img.down-arrow{
 	padding: 0 10px;
 	font-size: 14px;
 }
-li>a:hover{
+.top-nav a:hover{
 	color: #fff;
 	background-color: #000;
 	
@@ -78,7 +77,6 @@ li>a:hover{
 	    line-height: 1rem;
 }
 /*qq登录图标*/
-
 img.qq-img{
 	display: block;
 	width: 18px;
@@ -94,10 +92,7 @@ img.qq-img{
 	width: 60px;
 	font-size: 10px;
 	line-height: 1rem;
-	text-align: center;
-	
-	
-	
+	text-align: center;		
 }
 .right-float li:nth-child(4)>a>img{
 	display: block;
@@ -144,11 +139,167 @@ img.qq-img{
 	height: 18px;
 	margin: 4px auto 2px;
 	border: 0;
-	vertical-align: middle;	
+	vertical-align: middle;		
+}
+/*第二部分导航栏样式*/
+div.sub-nav{
+	width: 990px;
+	margin: 50px auto 0;	
+	height: 65px;
+	position: relative;
+}
+div.sub-logo-left{
+	float: left;
 	
+}
+div.sub-logo-left,div.sub-serch-right{
+line-height: 65px;	
+}
+div.sub-serch-right{
+	float: right;
+}
+div.sub-nav-title{
+	/* float: right; */
+	line-height: 65px;	
+	/* padding: 0 65px 0 0; */
+	position: absolute;
+	left: 200px;
 	
 }
 
+div.sub-nav-title>ul li{
+	display: inline-block;
+	padding-left: 10px;	
+}
+div.sub-nav-title>ul li a{
+	color: #000;
+	font-size: 20px;
+}
+div.sub-nav-title>ul li a:hover{
+	color: #ff0000;
+	background-color: #fff;
+}
+div.sub-logo-left a{
+	font-size: 20px;
+	color:#1E90FF;
+}
+div.sub-nav-title>ul li:last-child{
+	padding-right: 50px;
+}
+.sub-serch-right>div.search-box>.search-text{
+	width: 160px;
+	border: 1px solid #ccc;
+	border-right: none;
+	border-radius: 3px 0 0 3px;
+	height: 20px;
+	line-height: 20px;
+	padding: 3px;
+	text-indent: 16px;
+}
+div.search-box>.search-text:focus{
+	outline: #ccc;
+	
+}
+	a.search-bth{
+	float: right;
+	border-radius: 0 3px 3px 0;
+    width: 80px;
+    height: 28px;
+    font-size: 14px;
+    text-indent: 35px;
+    line-height: 28px;	
+	background:#999 url(../img/font-img/search.png)no-repeat scroll 12px center/16px auto;
+	margin-top: 21px;
+	color: #fff;
+	
+	}
+/*主体内容开始*/
+div.mian-content{
+	width: 990px;	
+	border: 1px solid red;
+	margin: 0 auto;
+	
+	
+}
+div.carousel-box{
+	position: relative;
+	overflow: hidden;
+	height: 360px;
+}
+/*空心圆指示器*/
+ul.hollow-circle {	
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+ul.hollow-circle li{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;	
+	border: 3px solid #999;
+	margin: 10px;
+	display: inline-block;
+}
+/*轮播图左右箭头*/
+a.prevBtn,a.nextBtn{
+	width: 40px;
+	height: 60px;
+	position: absolute;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 5;
+	border: 1px solid lawngreen;
+}
+
+
+
+/*侧边栏*/
+div.broadside{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 220px;
+	height: 330px;
+	padding: 30px 0 0;
+	background: #444;
+	background: rgba(68,68,68,.4);
+	z-index: 4;
+}
+div.broadside>ul li{
+   
+}
+div.broadside>ul li a{
+	    display: block;
+	    color: #fff;
+	    height: 20px;
+	    line-height: 20px;
+	    padding: 20px 0;
+	
+}
+div.broadside>ul li i,div.broadside>ul li b{
+	width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 10px 0 20px;	
+	background: rgba(0,0,0,0) url(../img/banner/icon.png)no-repeat scroll 0 0/auto 20px;
+}
+div.broadside>ul li b{
+	float: right;
+	background-position: -100px 0;
+}
+div.broadside>ul .i2 i{
+	background-position: -20px;
+}
+div.broadside>ul .i3 i{
+	background-position: -120px;
+}
+div.broadside>ul .i4 i{
+	background-position: -60px;
+}
+div.broadside>ul .i5 i{
+	background-position: -80px;
+}
+/*主体内容结束*/
 
 
 
